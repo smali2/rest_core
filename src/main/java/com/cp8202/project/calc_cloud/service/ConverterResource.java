@@ -8,8 +8,8 @@ import javax.ws.rs.PathParam;
 import javax.ws.rs.Produces;
 import javax.ws.rs.core.MediaType;
 
+import com.cp8202.calculator.calc_cloud.ConverterService;
 import com.cp8202.project.calc_cloud.model.Myconversion;
-import com.cp8202.project.calc_cloud.resources.ConverterService;
 
 @Path("/converter")
 public class ConverterResource {

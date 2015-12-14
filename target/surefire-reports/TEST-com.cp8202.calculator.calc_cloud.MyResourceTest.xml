@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" ?>
-<testsuite failures="0" time="0.67" errors="0" skipped="0" tests="1" name="com.cp8202.calculator.calc_cloud.MyResourceTest">
+<testsuite failures="0" time="0.611" errors="0" skipped="0" tests="1" name="com.cp8202.calculator.calc_cloud.MyResourceTest">
   <properties>
     <property name="java.runtime.name" value="Java(TM) SE Runtime Environment"/>
     <property name="sun.boot.library.path" value="C:\Program Files\Java\jdk1.7.0_25\jre\bin"/>
@@ -61,5 +61,5 @@
     <property name="sun.desktop" value="windows"/>
     <property name="sun.cpu.isalist" value="amd64"/>
   </properties>
-  <testcase time="0.67" classname="com.cp8202.calculator.calc_cloud.MyResourceTest" name="testGetIt"/>
+  <testcase time="0.611" classname="com.cp8202.calculator.calc_cloud.MyResourceTest" name="testGetIt"/>
 </testsuite>
