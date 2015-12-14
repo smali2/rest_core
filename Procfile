@@ -1,0 +1,1 @@
+web: java -cp target/classes:target/dependency/* com.cp8202.calculator.calc_cloud.heroku.Main
