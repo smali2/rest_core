@@ -6,6 +6,7 @@ import javax.ws.rs.POST;
 import javax.ws.rs.Path;
 import javax.ws.rs.PathParam;
 import javax.ws.rs.Produces;
+import javax.ws.rs.QueryParam;
 import javax.ws.rs.core.MediaType;
 
 import com.cp8202.project.calc_cloud.model.Myconversion;
@@ -99,4 +100,35 @@ public class ConverterResource {
 		}
 		
 	}
+	
+	// For client testing purposes 
+		@GET
+		@Produces(MediaType.TEXT_PLAIN)
+		@Path("/client")
+		public double operate2(@QueryParam("operation") String op, @QueryParam("param1") double param1) {
+			if (op.equals("FahrenheitToCelsius")) {
+				return conv.FahrenheitToCelsius(param1);
+			} else if (op.equals("CelsiusToFahrenheit")) {
+				return conv.CelsiusToFahrenheit(param1);
+			} else if (op.equals("MetreToFeet")) {
+				return conv.MetreToFeet(param1);
+			} else if (op.equals("FeetToMetre")) {
+				return conv.FeetToMetre(param1);
+			} else if (op.equals("MetreToYard")) {
+				return conv.MetreToYard(param1);
+			} else if (op.equals("YardToMetre")) {
+				return conv.YardToMetre(param1);
+			} else if (op.equals("KilometreToMile")) {
+				return conv.KilometreToMile(param1);
+			} else if (op.equals("MileToKilometre")) {
+				return conv.MileToKilometre(param1);
+			} else if (op.equals("KilogramtoPound")) {
+				return conv.KilogramtoPound(param1);
+			} else if (op.equals("PoundToKilogram")) {
+				return conv.PoundToKilogram(param1);
+			} else {
+				return 0000.00000;
+			}
+			
+		}
 }

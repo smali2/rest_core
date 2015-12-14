@@ -6,6 +6,7 @@ import javax.ws.rs.POST;
 import javax.ws.rs.Path;
 import javax.ws.rs.PathParam;
 import javax.ws.rs.Produces;
+import javax.ws.rs.QueryParam;
 import javax.ws.rs.core.MediaType;
 
 import com.cp8202.project.calc_cloud.model.Memory;
@@ -52,6 +53,13 @@ public class MemoryResource {
 		
 	}
 	
-	
+	// For client testing purposes
+	@GET
+	@Path("/client/save")
+	@Consumes(MediaType.TEXT_PLAIN)
+	public double save2(@QueryParam("value1") double param1) {
+		return ms.save(param1);
+		
+	}
 
 }

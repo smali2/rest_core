@@ -6,6 +6,7 @@ import javax.ws.rs.POST;
 import javax.ws.rs.Path;
 import javax.ws.rs.PathParam;
 import javax.ws.rs.Produces;
+import javax.ws.rs.QueryParam;
 import javax.ws.rs.core.MediaType;
 
 import com.cp8202.project.calc_cloud.model.Calculator;
@@ -64,6 +65,24 @@ public class CalculatorResource {
 		
 	}
 	
+	// For client testing purposes
+		@GET
+		@Produces(MediaType.TEXT_PLAIN)
+		@Path("/client")
+		public double operate2(@QueryParam("op") String op, @QueryParam("param1") double param1, @QueryParam("param2") double param2) {  
+			if (op.equals("add")) {
+				return calc.add(param1, param2);
+			} else if (op.equals("subtract")) {
+				return calc.subtractNumbers(param1, param2);
+			} else if (op.equals("multiply")) {
+				return calc.multiplyNumbers(param1, param2);
+			} else {
+				return calc.divideNumbers(param1, param2);
+			}
+			
+		}
+		
+		
 	@POST
 	@Produces(MediaType.TEXT_PLAIN)
 	@Consumes(MediaType.APPLICATION_JSON)
