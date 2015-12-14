@@ -11,9 +11,10 @@
     <p><a href="webapi/myresource">Default resource</a>
     
     
-    
+    <br><br>
+    <br>
     CLIENT TESTING
-    
+    <br><br>
         SERVICE 1: CALCULATOR
 <form method="get" action="webapi/calculator/client">
 Please enter 2 numbers, decimals are allowed: <input type="text"
