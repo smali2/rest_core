@@ -1,0 +1,1 @@
+	You can see the source code to understand all the subresources available or you can do the following: https://cp8202-sali-rest.herokuapp.com/{one of: calculator, memory, converter}/{type anything to know a list of subresources for the primary resource}. https://cp8202-sali-rest.herokuapp.com/converter/blahblah
