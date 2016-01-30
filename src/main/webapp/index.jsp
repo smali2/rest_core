@@ -16,7 +16,7 @@
     CLIENT TESTING
     <br><br>
         SERVICE 1: CALCULATOR
-<form method="get" action="webapi/calculator/client">
+<form method="get" action="https://cp8202-sali-rest.herokuapp.com//calculator/client">
 Please enter 2 numbers, decimals are allowed: <input type="text"
 name="param1"> and <input type="text" name="param2"> <br>
 What operation would you like to do? <br>
@@ -31,24 +31,24 @@ What operation would you like to do? <br>
 </form>
 
 SERVICE 2: MEMORY STORE
-<form action="webapi/memory/client/save" method="get">
+<form action="https://cp8202-sali-rest.herokuapp.com/memory/client/save" method="get">
 Please enter a number to store into memory: <input type="text"
 name="value1"> <input type="submit"
 value="=">
 </form>
 RETRIEVE MEMORY FROM STORE
-<form action="webapi/memory/retrieve" method="get">
+<form action="https://cp8202-sali-rest.herokuapp.com/memory/retrieve" method="get">
 <input type="submit" name="retrieve" value="Show me stored number">
 </form>
 
 CLEAR MEMORY FROM STORE
-<form action="webapi/memory/clear">
+<form action="https://cp8202-sali-rest.herokuapp.com/memory/clear">
 <input type="submit" name="clear" value="Clear Memory from store">
 </form>
 
 
 SERVICE 3: TO/FROM METRIC CONVERSION
-<form action="webapi/converter/client">
+<form action="https://cp8202-sali-rest.herokuapp.com/converter/client">
 Please enter a number to convert, decimals are allowed: <input type="text"
 name="param1"><br>
 
